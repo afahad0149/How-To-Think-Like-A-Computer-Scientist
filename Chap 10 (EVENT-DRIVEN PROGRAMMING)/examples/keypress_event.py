@@ -19,14 +19,14 @@ def h3():
 def h4():
     wn.bye() # Close down the turtle window
 
-# These lines "wire up" keypresses to the handlers we’ve defined.
+# These lines "wire up" keypresses to the handlers we've defined.
 wn.onkey(h1, "Up")
 wn.onkey(h2, "Left")
 wn.onkey(h3, "Right")
 wn.onkey(h4, "q")
 
 # Now we need to tell the window to start listening for events,
-# If any of the keys that we’re monitoring is pressed, its
+# If any of the keys that we're monitoring is pressed, its
 # handler will be called.
 wn.listen()
 wn.mainloop()
