@@ -47,7 +47,16 @@ def h13():
     turtle.setup(400,500)
 
 def h11():
-    turtle.undo()
+    tess.goto(0,0)
+
+def h12():
+    global shape
+    if shape % 2 == 0:
+        tess.shape('turtle')
+    else:
+        tess.shape('circle')
+    
+    shape += 1
 
 
 # These lines "wire up" keypresses to the handlers we've defined.
@@ -64,11 +73,11 @@ wn.onkey(h6, 'g')
 wn.onkey(h7, 'b')
 wn.onkey(h8, 'plus')
 wn.onkey(h9, 'minus')
-wn.onkey(h10, 'Return')
-wn.onkey(h13, 'Delete')
-wn.onkey(h11, 'Control_L')
-wn.onkey(h4, 'Escape')
-#wn.onkey(h12, 'Alt_L')
+wn.onkey(h10, 'Return') #increases size of the window
+wn.onkey(h13, 'Delete') #decreases size of the window
+wn.onkey(h11, 'Home') #puts the turtle back in the center
+wn.onkey(h4, 'Escape') #closes the window
+wn.onkey(h12, 'Alt_L') #changes shape of the turtle
 
 
 
