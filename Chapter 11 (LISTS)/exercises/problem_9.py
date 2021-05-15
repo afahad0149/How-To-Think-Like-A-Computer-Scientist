@@ -8,4 +8,4 @@ song = " The rain  in Spain... "
 print(" ".join(song.split()))
 print(song)
 
-# the seperator is fixed but the delimiter might not be
+# the seperator is fixed but the delimiter might not be in case of WHITE SPACES
