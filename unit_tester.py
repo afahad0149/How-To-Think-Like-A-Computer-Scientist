@@ -1,3 +1,5 @@
+# To make it available for all directories: https://stackoverflow.com/questions/3144089 expand-python-search-path-to-other-source
+
 import sys
 
 def test (did_pass):
