@@ -1,4 +1,5 @@
-file_handle = open("/home/afahad/Git_Repositories/How-To-Think-Like-A-Computer-Scientist/Chapter 13 (FILES)/examples/file_read_write/test.txt", "r")
+file_handle = open("test.txt", "r")
+
 while True:
     line = file_handle.readline()
     if len(line) == 0:
