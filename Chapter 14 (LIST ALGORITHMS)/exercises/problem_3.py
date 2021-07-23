@@ -58,7 +58,7 @@ def main():
     num_found = 0
     solutions = []
     tries = 0
-    while num_found < 10:
+    while num_found < 92:
         rng.shuffle(bd)
         tries += 1
         if not has_clashes(bd):
@@ -68,6 +68,6 @@ def main():
                 print("Found solution {0} in {1} tries.".format(sol, tries))
                 num_found += 1
             tries = 0
-            
+
 
 main()
